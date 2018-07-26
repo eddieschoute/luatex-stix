@@ -17,3 +17,5 @@ RUN wget -q https://github.com/stipub/stixfonts/archive/2.0.0.tar.gz \
 	&& cp stixfonts-2.0.0/OTF/*.otf /usr/local/share/fonts/ \
 	&& fc-cache \
 	&& rm 2.0.0.tar.gz && rm -r stixfonts-2.0.0
+# Update otf cache
+RUN luaotfload-tool --update
