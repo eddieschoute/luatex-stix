@@ -12,7 +12,7 @@ jobs:
       - name: Build and publish Docker image
         uses: elgohr/Publish-Docker-Github-Action@2.8
         with:
-          name: owner/repository/image
+          name: eddieschoute/luatex-stix/luatex-stix
           username: $GITHUB_ACTOR
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
