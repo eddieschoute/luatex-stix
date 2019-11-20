@@ -13,7 +13,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@2.8
         with:
           name: owner/repository/image
-          username: ${{ GITHUB_ACTOR }}
+          username: $GITHUB_ACTOR
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           tagnames: true
