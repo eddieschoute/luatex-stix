@@ -16,4 +16,4 @@ jobs:
           username: $GITHUB_ACTOR
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          tagnames: true
+          tag_names: true
