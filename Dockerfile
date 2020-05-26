@@ -4,6 +4,7 @@ FROM debian:testing-slim
 RUN apt-get update && apt-get install -y texlive-luatex \
 					texlive-latex-recommended \
 					texlive-fonts-recommended \
+					texlive-font-utils \
 					texlive-bibtex-extra \
 					texlive-science \
 					texlive-pictures \
