@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y texlive-luatex \
 					texlive-pictures \
 					biber \
 					latexmk \
-					python-pygments \
+					python3-pygments \
 					wget
 
 RUN tlmgr init-usertree
