@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build and publish Docker image
-        uses: elgohr/Publish-Docker-Github-Action@2.8
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: eddieschoute/luatex-stix/luatex-stix
           username: $GITHUB_ACTOR
